@@ -1,42 +1,35 @@
-let sednaProfile = {
-    name : "Sedna",
-    summary: "Gummies jelly beans ice cream tiramisu bear claw sugar plum dragée. Muffin gummi bears gummi bears tart danish gingerbread wafer.",
-    
-    // addImage: function imagine (object) {
-    //     const img = document.createElement("img");
-    //     img.src = `./assets/${object[name]}.jpg`;
-    //     document.getElementById("dynoPhoto").appendChild(img);
-    // }
+let list = [
+    {
+    name: "Sedna",
+    src: "assets/sedna.jpg",
+    text: "Shot in the dark"
+    }, 
+    {
+        
+    }
+]
+
+class Goddess {
+constructor (name, src, text){
+    this.name = name;
+    this.src = src;
+    this.text = text;
+}
 }
 
-function imagine (object) {
-    const doc = document.createElement("img");
-    img.src = `./assets/${object["name"]}.jpg`;
-    document.getElementById("dynoPhoto").appendChild(img);
-}
 
-function create(object) {
-    let summary = object["summary"];
-    document.getElementById("dynoPara").appendChild(summary);
-}
+let anyawu = new Goddess ("Anyawu", "assets/anyawu.jpg", "some text")
 
-// const image = document.createElement("image");
-// image.src = './assets/sedna.jpg';
+console.log(anyawu);
 
-// function add_img() { 
-// 	var img = document.createElement('img'); 
-//     img.src = 'https://media.geeksforgeeks.org/wp-content/uploads/20190529122828/bs21.png'; 
-// 	document.getElementById('body').appendChild(img);
+
+// function imagine(object) {
+//     const doc = document.createElement("img");
+//     img.src = `./assets/${object["name"]}.jpg`;
+//     document.getElementById("dynoPhoto").appendChild(img);
 // }
 
-function test () {
-    // let photo = document.getElementById("dynoPhoto").image;
-    // let title = document.getElementById("dynoTitle").h1;;
-    // let summary = document.getElementById("dynoPara");
-
-    document.getElementById("dynoPara").innerHTML = create(sednaProfile);
-     //document.getElementById("dynoPhoto").innerHTML = imagine(sednaProfile);
-}
-
-let container = document.getElementById("clickArea");
-container.addEventListener("hover", test);
+// function create(object) {
+//     let summary = object["summary"];
+//     document.getElementById("dynoPara").appendChild(summary);
+// }
