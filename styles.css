@@ -3,91 +3,87 @@ body {
   padding: 0;
 }
 
-.header {
-  height: 10vh;
+div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.mainContainer {
-  background-color: grey;
-  flex-direction: column;
+.flex {
+  height: 95vh;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  align-content: center;
-  height: 37rem;
-  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: .5rem;
 }
-.mainContainer div {
-  width: 20%;
-  min-width: 175px;
-  box-sizing: border-box;
+
+.flex .column1, .flex .column2, .flex .column3, .flex .column4 {
+  width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+}
+
+.column1 div:first-child {
+  height: 25%;
+  background-image: url(./assets/sedna.jpg);
   background-size: cover;
-  background-position: center;
 }
 
-.one {
-  height: 6rem;
-  background-image: url("./assets/sedna.jpg");
+.column1 div:nth-child(2) {
+  height: 45%;
 }
 
-.two {
-  height: 20rem;
-  background-image: url("./assets/marzanna.jpg");
+.column1 div:last-child {
+  height: 30%;
 }
 
-.three {
-  height: 10rem;
-  background-image: url("./assets/autumn2.jpg");
+.column2 div:first-child {
+  height: 45%;
 }
 
-.four {
-  height: 18.5rem;
-  background-image: url("./assets/ixchel.jpg");
+.column2 div:last-child {
+  height: 55%;
 }
 
-.five {
-  height: 18rem;
-  background-image: url("./assets/aphrodite.jpg");
+.column3 div:first-child {
+  height: 55%;
 }
 
-.six {
-  height: 23rem;
-  background-image: url("./assets/freya.jpg");
+.column3 div:last-child {
+  height: 45%;
 }
 
-.seven {
-  height: 13.5rem;
-  background-image: url("./assets/jiutian.jpg");
+.column4 div:first-child {
+  height: 40%;
 }
 
-.eight {
-  height: 17rem;
-  background-image: url("./assets/anyanwu.jpg");
+.column4 div:nth-child(2) {
+  height: 35%;
 }
 
-.nine {
-  height: 10rem;
-  background-image: url("./assets/earth.jpg");
+.column4 div:last-child {
+  height: 25%;
 }
 
-.ten {
-  height: 9rem;
-  background-image: url("./assets/ladyRed.jpg");
-}
-
-.eleven {
-  border: 5px solid fuchsia;
-  height: 80%;
-  width: 40%;
+#popUp {
+  width: 60vw;
+  height: 75vh;
   position: absolute;
-  align-self: center;
-  margin-top: 10vh;
-  background-color: rgba(0, 0, 0, 0.623);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.footer {
-  border: solid 1px greenyellow;
+#popUp img {
+  height: 90%;
 }
-
 /*# sourceMappingURL=styles.css.map */

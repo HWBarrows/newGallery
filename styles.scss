@@ -1,98 +1,93 @@
 body {
     margin: 0;
     padding: 0;
+    
+    
 }
+// .absoluteContainer {
+//     position: relative;
+// }
 
-.header {
-    height: 10vh;
+div {
+    box-sizing: border-box;
 }
-
-.mainContainer {
-    background-color: grey;
-    flex-direction: column;
+.flex {
+    height: 95vh;
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     gap: .5rem;
-    align-content: center;
-    height:37rem;
-    width: 100%;
 
-        div {
-            width: 20%;
-            min-width: 175px;
-            box-sizing: border-box;
-            background-size: cover;
-            background-position: center;
+        .column1, .column2, .column3, .column4 {
+            width: 20vw;
+            //height: 100%;
+            
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
         }
 }
 
-.one {
-    // height: 20%;
-    height: 6rem;
-    background-image: url("./assets/sedna.jpg");
-   
+.column1 {
+    div:first-child {
+        height: 25%;
+        background-image: url(./assets/sedna.jpg);
+        background-size: cover;
+        
+    }
 
-}
-.two {
-    height:20rem;
-    background-image: url("./assets/marzanna.jpg");
-   
-    
-}
+    div:nth-child(2){
+        height: 45%;
+    }
 
-.three {
-    height:10rem;
-    background-image: url("./assets/autumn2.jpg");
-    
+    div:last-child {
+        height: 30%;
+    }
 }
 
-.four {
-    height:18.5rem;
-    background-image: url("./assets/ixchel.jpg");
-    
+.column2 {
+    div:first-child {
+        height: 45%;
+    }
+    div:last-child {
+        height:55%;
+    }
 }
 
-.five {
-    height: 18rem;
-    background-image: url("./assets/aphrodite.jpg");
-    
-    
+.column3 {
+    div:first-child {
+        height: 55%;
+    }
+    div:last-child {
+        height: 45%;
+    }
 }
 
-.six {
-    height: 23rem;
-    background-image: url("./assets/freya.jpg");
-    
+.column4 {
+    div:first-child {
+        height: 40%;
+    }
+    div:nth-child(2) {
+        height: 35%;
+    }
+    div:last-child {
+        height: 25%;
+    }
 }
 
-.seven {
-    height:13.5rem;
-    background-image:url("./assets/jiutian.jpg");
+#popUp {
+    width: 60vw;
+    height: 75vh;
+    position: absolute;
+    align-self: center;
+    // display: flex;
+    // align-items: center;
     
-}
 
-.eight {
+        img {
+            height: 90%;
+            
+        }
+       
     
-    height:17rem;
-    background-image: url("./assets/anyanwu.jpg");
-    
-    
-}
-
-.nine {
-    height:10rem;
-    background-image: url("./assets/earth.jpg");
-
-}
-
-.ten {
-    height: 9rem;
-    background-image: url("./assets/ladyRed.jpg");
-}
-
-//
-
-.footer {
-    border: solid 1px greenyellow;
 }
