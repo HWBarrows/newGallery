@@ -34,8 +34,6 @@ div {
 
 .column1 div:first-child {
   height: 25%;
-  background-image: url(./assets/sedna.jpg);
-  background-size: cover;
 }
 
 .column1 div:nth-child(2) {
@@ -74,16 +72,39 @@ div {
   height: 25%;
 }
 
-#popUp {
+.popUp {
   width: 60vw;
   height: 75vh;
   position: absolute;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(34, 32, 34, 0.88);
+  color: white;
+  border-radius: 5px;
 }
 
-#popUp img {
+.popUp .imgContainer {
   height: 90%;
+  width: 25vw;
+  background-size: cover;
+  background-position: center;
+}
+
+.popUp .textContainer {
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=styles.css.map */

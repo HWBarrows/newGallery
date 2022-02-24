@@ -1,9 +1,11 @@
 
 
-const pop = document.querySelector("#popUp")
-pop.style.display = "none"
+const pop = document.getElementById("popUp")
+pop.className = "popUp"
+//pop.style.display = "none"
 const container = document.querySelector(".flex")
 const filler = Array.from(document.querySelectorAll(".fillers"))
+console.log(filler);
 
 
 filler.forEach(item => {
@@ -13,24 +15,26 @@ filler.forEach(item => {
 })
 
 container.addEventListener("click", (e) => {
-    if (pop.style.display == "none" && e.target.id) {
+    if (pop.style.display == "none" && e.target.id) { //replace entire section with class
         pop.style.display = "flex"
-        pop.style.justifyContent = "space-evenly"
-        pop.style.alignItems = "center"
-        pop.style.background = "rgba(18, 17, 18, 0.88)"
-        pop.style.color = "white"
+        // pop.style.justifyContent = "space-evenly"
+        // pop.style.alignItems = "center"
+        // pop.style.background = "rgba(18, 17, 18, 0.88)"
+        // pop.style.color = "white"
       
-        const imgContainer = document.createElement("div")
+        const imgContainer = document.createElement("div")// create class
+        imgContainer.className = "imgContainer"
         imgContainer.style.backgroundImage = `url(./assets/${e.target.id}.jpg)`
-        imgContainer.style.backgroundSize = "cover"
-        imgContainer.style.backgroundPosition = "center"
-        imgContainer.style.height = "90%"
-        imgContainer.style.width = "25vw"
+        // imgContainer.style.backgroundSize = "cover"
+        // imgContainer.style.backgroundPosition = "center"
+        // imgContainer.style.height = "90%"
+        //imgContainer.style.width = "25vw"
         //const img = document.createElement("img")
         const textContainer = document.createElement("div")
-        textContainer.style.width = "25vw"
-        textContainer.style.display = "flex"
-        textContainer.style.flexDirection = "column"
+        textContainer.className = "textContainer"
+        // textContainer.style.width = "25vw"
+        // textContainer.style.display = "flex"
+        // textContainer.style.flexDirection = "column"
         const p = document.createElement("p")
         const h1 = document.createElement("h1")
     
@@ -65,24 +69,3 @@ container.addEventListener("click", (e) => {
     container.classList.toggle = "active"
 })
 
-
-// data.forEach(({name, src, text }) => {
-//     const div = document.createElement("div")
-//     div.id = name.toLowerCase()
-//     div.style = "text-align: center;"
-  
-//     const h1 = document.createElement("h1")
-//     h1.innerText = name
-//     const img = document.createElement("img")
-//     img.src = src
-//     img.alt = name
-//     const p = document.createElement("p")
-//     p.innerHTML = text
-    
-//     div.appendChild(h1)
-//     div.appendChild(img)
-//     div.appendChild(p)
-  
-//     main.appendChild(div)
-  
-//   })
