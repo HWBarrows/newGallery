@@ -10,8 +10,7 @@ console.log(filler);
 
 filler.forEach(item => {
     item.style.backgroundImage = `url(./assets/${item.id}.jpg)`
-    item.style.backgroundSize = "cover"
-    item.style.backgroundPosition = "center"
+
 })
 
 
@@ -19,19 +18,19 @@ container.addEventListener("click", (e) => {
     if (pop.style.opacity == "0" && e.target.id && e.target.id != "popUp") { //replace entire section with class
         pop.style.opacity = "1"
         pop.style.zIndex = "2"
-     
-      
+
+
         const imgContainer = document.createElement("div")// create class
         imgContainer.className = "imgContainer"
         imgContainer.style.backgroundImage = `url(./assets/${e.target.id}.jpg)`
-     
+
         const textContainer = document.createElement("div")
         textContainer.className = "textContainer"
-       
+
         const p = document.createElement("p")
         const h1 = document.createElement("h1")
-    
-       
+
+
 
         arrayOfObjs.filter(item => {
             if (item.name.toLowerCase() == e.target.id){
@@ -43,11 +42,11 @@ container.addEventListener("click", (e) => {
 
         textContainer.appendChild(h1)
         textContainer.appendChild(p)
-        
+
         pop.appendChild(imgContainer)
         pop.appendChild(textContainer)
-       
-        
+
+
     }else {
         pop.style.opacity = "0"
         pop.style.zIndex = "-1"

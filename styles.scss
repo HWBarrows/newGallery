@@ -8,6 +8,11 @@ body {
 div {
     box-sizing: border-box;
 }
+
+.fillers {
+    background-position: center;
+    background-size: cover;
+}
 .flex {
     height: 95vh;
     position: relative;
