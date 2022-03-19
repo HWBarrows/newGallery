@@ -14,7 +14,9 @@
     },
     {
       name:"Carpo",
-      summary: "Goddess of autumn"
+      summary: "Goddess of autumn",
+      artist: "Bella Kotak",
+      link: "https://www.boredpanda.com/fine-art-photography-bella-kotak/?media_id=879320"
     },
     {
       name:"Ixchel",
@@ -24,7 +26,9 @@
     },
     {
       name:"Aphrodite",
-      summary:"Goddess of love and beauty"
+      summary:"Goddess of love and beauty",
+      artist: "Olha Karvytska",
+      link: "https://karvytska.artstation.com/"
     },
     {
       name:"Freya",
@@ -46,7 +50,9 @@
     },
     {
       name:"Gaia",
-      summary:"Greek goddess of earth"
+      summary:"Greek goddess of earth",
+      artist: "Iiya Haharev",
+      link: "https://www.behance.net/haharevIlya20f7"
     },
     {
       name:"ladyRed",
