@@ -20,7 +20,7 @@
     },
     {
       name:"Ixchel",
-      summary:"Jaguar goddess of midwifery and medicine in ancient Maya culture",
+      summary:"Jaguar goddess of midwifery and medicine in ancient Mayan culture",
       artist: "Oscar Torres",
       link:"https://oscartorresblog.tumblr.com/post/87622185454/virgen-santa-francisca-by-oscar-torres"
     },
@@ -55,9 +55,10 @@
       link: "https://www.behance.net/haharevIlya20f7"
     },
     {
-      name:"ladyRed",
-      summary:"Unknown",
-      artist:"Alexey Pavlovskiy"
+      name:"Uzume",
+      summary:"Goddess of the dawn in the Shinto religion of Japan",
+      artist:"Alexey Pavlovskiy",
+      link: "https://www.behance.net/gallery/127725291/Maya"
     }
   ]
   
