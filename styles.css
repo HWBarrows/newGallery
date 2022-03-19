@@ -95,9 +95,9 @@ div {
   display: flex;
   opacity: 0;
   z-index: -1;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -108,8 +108,9 @@ div {
   transition: .5s;
 }
 
-.popUp .imgContainer {
+.popUp #imgContainer {
   height: 90%;
+  margin-right: 1.5em;
   width: 25vw;
   background-size: cover;
   background-position: center;
@@ -118,7 +119,7 @@ div {
 }
 
 .popUp .textContainer {
-  width: 25vw;
+  width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,5 +129,14 @@ div {
           flex-direction: column;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+span {
+  height: 25px;
+  width: 25px;
+  background-image: url("./assets/close-button-png-30230.png");
+  background-size: cover;
+  margin-left: 2em;
+  opacity: .8;
 }
 /*# sourceMappingURL=styles.css.map */
