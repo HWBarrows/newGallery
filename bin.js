@@ -1,7 +1,6 @@
 
 
 const pop = document.getElementById("popUp")
-pop.className = "popUp"
 
 const imgContainer = document.getElementById("imgContainer")
 const title = document.getElementById("title")
@@ -24,9 +23,9 @@ const closePop = ()=> {
 }
 
 const makePopup = (e) => {
-    if (pop.style.opacity == "0" && pop.style.zIndex == "-1" && e.target.id && e.target.id != "popUp") { //replace entire section with class
-        pop.style.opacity = "1"
-        pop.style.zIndex = "2"
+    if(pop.className =="hide"){
+    
+        pop.className = "popUp"
         imgContainer.style.backgroundImage = `url(./assets/${e.target.id}.jpg)`
 
         arrayOfObjs.filter(item => {
@@ -41,8 +40,7 @@ const makePopup = (e) => {
         close.addEventListener("click", closePop)
 
     }else {
-        pop.style.opacity = "0"
-        pop.style.zIndex = "-1"
+        pop.className = "hide"
     }
 }
 container.addEventListener("click", makePopup)
