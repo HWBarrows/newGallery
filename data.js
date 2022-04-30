@@ -2,7 +2,7 @@
   let arrayOfObjs = [
     {
       name:"Sedna",
-      summary: "Sedna is the goddess of the sea and marine animals in Inuit mythology",
+      summary: "Goddess of the sea and marine animals in Inuit mythology",
       artist:"Von Wong",
       link: "https://blog.vonwong.com/baliunderwater/"
     },
@@ -20,7 +20,7 @@
     },
     {
       name:"Ixchel",
-      summary:"Jaguar goddess of midwifery and medicine in ancient Mayan culture",
+      summary:"Mayan jaguar goddess of midwifery and medicine",
       artist: "Oscar Torres",
       link:"https://oscartorresblog.tumblr.com/post/87622185454/virgen-santa-francisca-by-oscar-torres"
     },
