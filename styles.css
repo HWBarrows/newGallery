@@ -160,6 +160,7 @@ span {
 @media screen and (max-width: 700px) {
   .flex {
     font-size: .9em;
+    width: 100%;
   }
   .flex h1 {
     font-size: 1.20em;
