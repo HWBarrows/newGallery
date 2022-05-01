@@ -151,11 +151,37 @@ span {
   opacity: .8;
 }
 
-@media screen and (max-width: 1050px) and (orientation: portrait) {
+@media screen and (max-width: 900px) and (orientation: portrait) {
   body {
     height: 100vw;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    position: relative;
+  }
+  .flex {
+    height: 50%;
+    position: static;
+  }
+  .popUp {
+    height: 61vh;
+    bottom: -40vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: .25em;
+    padding-bottom: .5em;
+  }
+  .popUp span {
+    height: 12.5px;
+    width: 15px;
+    margin: 0;
+  }
+  .popUp #imgContainer {
+    margin: .5em;
+    height: 45%;
+    width: 90%;
+  }
+  .popUp .textContainer {
+    width: 90%;
   }
 }
 

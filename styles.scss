@@ -89,7 +89,6 @@ div {
     justify-content:center;
     align-items: center;
     background: rgba(34, 32, 34, 0.88);
-    
     color: white;
     border-radius: 5px;
     transition: .5s;
@@ -128,16 +127,38 @@ span{
     opacity: .8;
 }
 
-@media screen and (max-width:1050px) and (orientation:portrait){
-    // .flex{
-    //     // transform: rotate(90deg);
-    //     orientation: landscape;
-    //     width: 1;
-    // }
-
+@media screen and (max-width:900px) and (orientation:portrait){
     body {
         height: 100vw;
-        transform: rotate(90deg);
+        position: relative;
+        // transform: rotate(90deg);
+    }
+    .flex {
+        height: 50%;
+        position: static;
+    }
+    .popUp {
+        height: 61vh;
+        bottom: -40vh;
+        flex-direction: column;
+        gap: .25em;
+        padding-bottom: .5em;
+
+        span {
+            height: 12.5px;
+            width: 15px;
+            margin: 0;
+        }
+
+        #imgContainer{
+            margin: .5em;
+            height: 45%;
+            width: 90%;
+        }
+
+        .textContainer {
+            width: 90%;
+        }
     }
 }
 
