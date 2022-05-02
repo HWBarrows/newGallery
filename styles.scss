@@ -131,35 +131,47 @@ span{
     body {
         height: 100vw;
         position: relative;
-        // transform: rotate(90deg);
+        
     }
     .flex {
         height: 50%;
         position: static;
     }
     .popUp {
-        height: 61vh;
+        height: 60vh;
+        //width: 80%;
         bottom: -40vh;
         flex-direction: column;
-        gap: .25em;
-        padding-bottom: .5em;
+        gap: 0;
+        
 
         span {
-            height: 12.5px;
-            width: 15px;
+            height: 25px;
+            width: 25px;
             margin: 0;
+            margin-top: 5px;
+            
         }
 
         #imgContainer{
-            margin: .5em;
+            margin: .25em;
             height: 45%;
             width: 90%;
         }
 
         .textContainer {
-            width: 90%;
+            width: 92.5%;
+            
         }
     }
+
+    h1{
+        margin:5px;
+    }
+    p {
+        margin:5px;
+    }
+    
 }
 
 @media screen and (max-width: 700px){
